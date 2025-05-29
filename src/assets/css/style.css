@@ -1,0 +1,631 @@
+@charset "utf-8";
+html,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+input,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  background-color: #EFF0F4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-size: 0.14rem;
+}
+.van-dialog__header {
+  color: #000;
+}
+.van-pull-refresh {
+  overflow: unset!important;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex.flex-b {
+  justify-content: space-between;
+}
+.flex.flex-c {
+  justify-content: center;
+}
+.flex.flex-e {
+  justify-content: flex-end;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+.flex-3 {
+  flex: 3;
+}
+.t-center,
+.t-c {
+  text-align: center;
+}
+.t-right,
+.t-r {
+  text-align: right;
+}
+.no-data {
+  text-align: center;
+  margin: 1rem 0;
+}
+.top-pad {
+  padding-top: 0.6rem;
+}
+.b-btn {
+  border-radius: 0.08rem;
+  background: #111111;
+  text-align: center;
+  font-size: 0.14rem;
+  color: #FFFFFF;
+  padding: 0.15rem 0;
+  margin-top: 0.4rem;
+}
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.icon.back {
+  width: 0.12rem;
+  height: 0.12rem;
+  background: url("../home/back.png") no-repeat center / 100%;
+}
+.icon.ty {
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url("../home/ty.svg") no-repeat center / 100%;
+}
+.icon.wty {
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url("../home/wty.svg") no-repeat center / 100%;
+}
+.icon.jzz {
+  width: 0.56rem;
+  height: 0.56rem;
+  background: url("../home/jzz.png") no-repeat center / 100%;
+  margin: 0 auto;
+}
+.icon.logon {
+  width: 2.3rem;
+  height: 2rem;
+  background: url("../home/logon.png") no-repeat center / 100%;
+  margin: 0 auto;
+}
+.icon.a {
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../home/a.svg") no-repeat center / 100%;
+}
+.icon.ac {
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../home/ac.svg") no-repeat center / 100%;
+}
+.icon.a1 {
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../home/a1.svg") no-repeat center / 100%;
+}
+.icon.ac1 {
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../home/ac1.svg") no-repeat center / 100%;
+}
+.icon.a2 {
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../home/a2.svg") no-repeat center / 100%;
+}
+.icon.ac2 {
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../home/ac2.svg") no-repeat center / 100%;
+}
+.icon.a3 {
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../home/a3.svg") no-repeat center / 100%;
+}
+.icon.ac3 {
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../home/ac3.svg") no-repeat center / 100%;
+}
+.icon.a4 {
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../home/a4.svg") no-repeat center / 100%;
+}
+.icon.ac4 {
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../home/ac4.svg") no-repeat center / 100%;
+}
+.icon.set {
+  width: 0.22rem;
+  height: 0.22rem;
+  background: url("../home/set.svg") no-repeat center / 100%;
+}
+.icon.jt1 {
+  width: 0.14rem;
+  height: 0.14rem;
+  background: url("../home/jt1.png") no-repeat center / 100%;
+}
+.icon.m1 {
+  width: 0.66rem;
+  height: 0.66rem;
+  background: url("../home/m1.svg") no-repeat center / 100%;
+}
+.icon.m2 {
+  width: 0.66rem;
+  height: 0.66rem;
+  background: url("../home/m2.svg") no-repeat center / 100%;
+}
+.icon.m3 {
+  width: 0.66rem;
+  height: 0.66rem;
+  background: url("../home/m3.svg") no-repeat center / 100%;
+}
+.icon.m4 {
+  width: 0.66rem;
+  height: 0.66rem;
+  background: url("../home/m4.svg") no-repeat center / 100%;
+}
+.icon.pass {
+  width: 2.01rem;
+  height: 1.06rem;
+  background: url("../home/pass.svg") no-repeat center / 100%;
+  margin: 0.3rem auto;
+}
+.icon.msg {
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../home/msg.svg") no-repeat center / 100%;
+}
+.icon.sou {
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../home/sou.svg") no-repeat center / 100%;
+}
+.icon.cz {
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../home/cz.svg") no-repeat center / 100%;
+}
+.icon.tx {
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../home/tx.svg") no-repeat center / 100%;
+}
+.icon.sbg {
+  width: 100%;
+  height: 1.35rem;
+  background: url("../home/sbg.png") no-repeat center / 100%;
+}
+.icon.addj {
+  width: 0.12rem;
+  height: 0.12rem;
+  background: url("../home/addj.png") no-repeat center / 100%;
+}
+.icon.bjbtn {
+  width: 0.18rem;
+  height: 0.18rem;
+  background: url("../home/bjbtn.png") no-repeat center / 100%;
+}
+.icon.zf {
+  width: 0.12rem;
+  height: 0.12rem;
+  background: url("../home/zf.png") no-repeat center / 100%;
+}
+.icon.df {
+  width: 0.12rem;
+  height: 0.12rem;
+  background: url("../home/df.png") no-repeat center / 100%;
+}
+.icon.jz1 {
+  width: 2.74rem;
+  height: 2.42rem;
+  background: url("../home/jz1.png") no-repeat center / 100%;
+  margin: 0 auto;
+}
+.icon.dl {
+  width: 1.76rem;
+  height: 1.76rem;
+  background: url("../home/dl.png") no-repeat center / 100%;
+  margin: 0 auto;
+}
+.icon.zy {
+  width: 0.16rem;
+  height: 0.16rem;
+  background: url("../home/zy.png") no-repeat center / 100%;
+}
+.icon.by {
+  width: 0.16rem;
+  height: 0.16rem;
+  background: url("../home/by.png") no-repeat center / 100%;
+}
+.icon.dj {
+  width: 0.12rem;
+  height: 0.12rem;
+  background: url("../home/dj.png") no-repeat center / 100%;
+}
+.icon.zc {
+  width: 2.36rem;
+  height: 1.68rem;
+  background: url("../home/zc.png") no-repeat center / 100%;
+  margin: 0 auto;
+}
+.icon.jz2 {
+  width: 2.86rem;
+  height: 2rem;
+  background: url("../home/jz2.png") no-repeat center / 100%;
+  margin: 0 auto;
+}
+.icon.user {
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url("../home/user.png") no-repeat center / 100%;
+}
+.icon.tz {
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url("../home/tz.png") no-repeat center / 100%;
+}
+.icon.jt2 {
+  width: 0.22rem;
+  height: 0.22rem;
+  background: url("../home/jt2.png") no-repeat center / 100%;
+}
+.icon.nocheck {
+  width: 0.18rem;
+  height: 0.18rem;
+  background: url("../home/nocheck.png") no-repeat center / 100%;
+}
+.icon.checked {
+  width: 0.18rem;
+  height: 0.18rem;
+  background: url("../home/checked.png") no-repeat center / 100%;
+}
+.icon.rzwc {
+  width: 1.42rem;
+  height: 1.18rem;
+  background: url("../home/rzwc.svg") no-repeat center / 100%;
+}
+.icon.sf {
+  width: 0.34rem;
+  height: 0.34rem;
+  background: url("../home/sf.png") no-repeat center / 100%;
+}
+.icon.bankbg {
+  width: 100%;
+  height: 1.7rem;
+  background: url("../home/bankbg.png") no-repeat center / 100%;
+}
+.icon.zjbg {
+  width: 100%;
+  height: 1.24rem;
+  background: url("../home/zjbg.png") no-repeat center / 100%;
+}
+.icon.ss {
+  width: 0.18rem;
+  height: 0.18rem;
+  background: url("../home/ss.png") no-repeat center / 100%;
+}
+.icon.ss1 {
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../home/sou.svg") no-repeat center / 100%;
+}
+.icon.mk1 {
+  width: 0.66rem;
+  height: 0.66rem;
+  background: url("../home/mk1.svg") no-repeat center / 100%;
+}
+.icon.mk2 {
+  width: 0.66rem;
+  height: 0.66rem;
+  background: url("../home/mk2.svg") no-repeat center / 100%;
+}
+.icon.mk3 {
+  width: 0.66rem;
+  height: 0.66rem;
+  background: url("../home/mk3.svg") no-repeat center / 100%;
+}
+.icon.mk4 {
+  width: 0.66rem;
+  height: 0.66rem;
+  background: url("../home/mk4.svg") no-repeat center / 100%;
+}
+.icon.gdp {
+  width: 0.9rem;
+  height: 0.56rem;
+  background: url("../home/gdp.png") no-repeat center / 100%;
+}
+.icon.hg {
+  width: 0.16rem;
+  height: 0.16rem;
+  background: url("../home/hg.png") no-repeat center / 100%;
+  margin-right: 0.05rem;
+}
+.icon.mg {
+  width: 0.16rem;
+  height: 0.16rem;
+  background: url("../home/mg.png") no-repeat center / 100%;
+  margin-right: 0.05rem;
+}
+.icon.u1 {
+  width: 0.18rem;
+  height: 0.18rem;
+  background: url("../home/u1.png") no-repeat center / 100%;
+}
+.icon.d1 {
+  width: 0.18rem;
+  height: 0.18rem;
+  background: url("../home/d1.png") no-repeat center / 100%;
+}
+.icon.jzx {
+  width: 0.16rem;
+  height: 0.16rem;
+  background: url("../home/jzx.png") no-repeat center / 100%;
+}
+.icon.czx {
+  width: 0.16rem;
+  height: 0.16rem;
+  background: url("../home/czx.png") no-repeat center / 100%;
+}
+.icon.kset {
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url("../home/st.png") no-repeat center / 100%;
+}
+.icon.add {
+  width: 0.12rem;
+  height: 0.12rem;
+  background: url("../home/add.png") no-repeat center / 100%;
+}
+.icon.copy {
+  width: 0.1rem;
+  height: 0.1rem;
+  background: url("../home/copy.png") no-repeat center / 100%;
+}
+.icon.down {
+  width: 0.12rem;
+  height: 0.12rem;
+  background: url("../home/down.png") no-repeat center / 100%;
+}
+.icon.up {
+  width: 0.12rem;
+  height: 0.12rem;
+  background: url("../home/up.png") no-repeat center / 100%;
+}
+.icon.wsc {
+  width: 0.16rem;
+  height: 0.16rem;
+  background: url("../home/wsc.png") no-repeat center / 100%;
+}
+.icon.jt {
+  width: 0.1rem;
+  height: 0.1rem;
+  background: url("../home/jt.png") no-repeat center / 100%;
+}
+.icon.xl {
+  width: 0.14rem;
+  height: 0.14rem;
+  background: url("../home/xl.png") no-repeat center / 100%;
+}
+.icon.up1 {
+  width: 0.14rem;
+  height: 0.14rem;
+  background: url("../home/up1.png") no-repeat center / 100%;
+}
+.icon.down1 {
+  width: 0.14rem;
+  height: 0.14rem;
+  background: url("../home/down1.png") no-repeat center / 100%;
+}
+.icon.sou2 {
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url("../home/sou2.png") no-repeat center / 100%;
+}
+.icon.tm {
+  width: 0.14rem;
+  height: 0.14rem;
+  background: url("../home/tm.png") no-repeat center / 100%;
+}
+.icon.s1 {
+  width: 0.1rem;
+  height: 0.1rem;
+  background: url("../home/s1.png") no-repeat center / 100%;
+}
+.icon.x1 {
+  width: 0.1rem;
+  height: 0.1rem;
+  background: url("../home/x1.png") no-repeat center / 100%;
+}
+.icon.wxz {
+  width: 0.18rem;
+  height: 0.18rem;
+  background: url("../home/wxz.png") no-repeat center / 100%;
+}
+.icon.xz {
+  width: 0.18rem;
+  height: 0.18rem;
+  background: url("../home/xz.png") no-repeat center / 100%;
+}
+.icon.sczx {
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url("../home/sczx.png") no-repeat center / 100%;
+}
+.icon.ysc {
+  width: 0.16rem;
+  height: 0.16rem;
+  background: url("../home/ysc.png") no-repeat center / 100%;
+}
+.icon.gd1 {
+  width: 1.5rem;
+  height: 0.98rem;
+  background: url("../home/gd1.png") no-repeat center / 100%;
+}
+.icon.gd2 {
+  width: 1.5rem;
+  height: 0.98rem;
+  background: url("../home/gd2.png") no-repeat center / 100%;
+}
+.icon.dd1 {
+  width: 0.12rem;
+  height: 0.12rem;
+  background: url("../home/dd1.png") no-repeat center / 100%;
+}
+.icon.zz1 {
+  width: 0.12rem;
+  height: 0.12rem;
+  background: url("../home/zz1.png") no-repeat center / 100%;
+}
+.icon.close {
+  width: 0.26rem;
+  height: 0.26rem;
+  background: url("../home/close.png") no-repeat center / 100%;
+}
+.icon.rn {
+  width: 1.06rem;
+  height: 1.14rem;
+  background: url("../home/rn.svg") no-repeat center / 100%;
+  margin: 0.3rem auto;
+}
+.icon.rns {
+  width: 0.18rem;
+  height: 0.18rem;
+  background: url("../home/rns.png") no-repeat center / 100%;
+}
+.icon.sou2 {
+  width: 0.18rem;
+  height: 0.18rem;
+  background: url("../home/sou2.png") no-repeat center / 100%;
+}
+.icon.usd {
+  width: 0.34rem;
+  height: 0.34rem;
+  background: url("../home/usd.png") no-repeat center / 100%;
+}
+.icon.qh {
+  width: 0.39rem;
+  height: 0.39rem;
+  background: url("../home/qh.png") no-repeat center / 100%;
+}
+.icon.thb {
+  width: 0.34rem;
+  height: 0.34rem;
+  background: url("../home/thb.png") no-repeat center / 100%;
+}
+.icon.del {
+  width: 0.16rem;
+  height: 0.16rem;
+  background: url("../home/del.png") no-repeat center / 100%;
+}
+.icon.back1 {
+  width: 0.1rem;
+  height: 0.18rem;
+  background: url("../home/back1.png") no-repeat center / 100%;
+}
+.icon.sou1 {
+  width: 0.16rem;
+  height: 0.17rem;
+  background: url("../home/sou1.png") no-repeat center / 100%;
+}
+.icon.rz {
+  width: 0.12rem;
+  height: 0.14rem;
+  background: url("../home/rz.png") no-repeat center / 100%;
+}
+.icon.logo {
+  width: 1.35rem;
+  height: 0.35rem;
+}
+.icon.logo img {
+  width: 100%;
+  height: 100%;
+}
+.icon.success {
+  width: 0.97rem;
+  height: 0.97rem;
+  background: url("../login/sc.png") no-repeat center / 100%;
+}
